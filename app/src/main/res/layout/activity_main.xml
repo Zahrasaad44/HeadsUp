@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/timerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Time:"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+    android:id="@+id/introLL"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@+id/timerTV"
+    tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/introTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Heads Up!" />
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FAECCDA0"
+            android:textColor="@color/black"
+            android:text="Play" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/celebrityLL"
+    android:layout_width="409dp"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/timerTV">
+
+        <TextView
+            android:id="@+id/celebrityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/taboo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#E36138"
+            android:textSize="23sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/taboo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#E36138"
+            android:textSize="23sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/taboo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#E36138"
+            android:textSize="23sp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
